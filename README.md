@@ -5,3 +5,4 @@ SoftUni JS Back End Course Project
 - [x] Initialize NodeJS Project
 - [x] Dev script
 - [x] Debugging
+- [x] Add basichttp server
