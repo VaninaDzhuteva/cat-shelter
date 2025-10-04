@@ -6,3 +6,4 @@ SoftUni JS Back End Course Project
 - [x] Dev script
 - [x] Debugging
 - [x] Add basichttp server
+- [x] Add resources
