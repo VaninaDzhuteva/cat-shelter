@@ -11,5 +11,5 @@ SoftUni JS Back End Course Project
 - [x] Add css
 - [x] Extract css into separate js
 - [x] Read site css from file system
+- [x] Add create breed page
 - [x] Add create cat page
-- [ ] Add create breed page

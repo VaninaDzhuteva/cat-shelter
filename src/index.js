@@ -12,6 +12,10 @@ const server = http.createServer(async (req, res) => {
             html = await addBreedView(); 
         break;
 
+        case '/cats/add-cat': 
+            html = await addCatView(); 
+        break;
+
         case '/styles/site.css':
             const siteCss = await fs.readFile('./src/styles/site.css', {encoding: "utf-8"})
             res.writeHead(200, {
@@ -44,6 +48,12 @@ async function addBreedView() {
     const breedHtml = await fs.readFile('./src/views/addBreed.html', {encoding: "utf-8"});
 
     return breedHtml;
+}
+
+async function addCatView() {
+    const catHtml = await fs.readFile('./src/views/addCat.html', {encoding: "utf-8"});
+
+    return catHtml;
 }
 
 server.listen(5000);
