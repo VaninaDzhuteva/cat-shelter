@@ -1,5 +1,5 @@
 export default `
-            @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 * {
     margin: 0;
@@ -221,4 +221,4 @@ body > form > label:nth-child(3) {
     background-color: lightskyblue;
     margin-bottom: 1.5rem;
 }
-            `
+`
