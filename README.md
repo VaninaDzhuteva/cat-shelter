@@ -13,3 +13,5 @@ SoftUni JS Back End Course Project
 - [x] Read site css from file system
 - [x] Add create breed page
 - [x] Add create cat page
+- [x] Render view generic function
+- [ ] Render dynamic cats on home page
