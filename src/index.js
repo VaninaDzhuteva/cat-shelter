@@ -5,6 +5,23 @@ import cats from './cats.js';
 
 const server = http.createServer(async (req, res) => {
     let html;
+
+    if (req.method === 'POST') {
+        let data = '';
+
+        req.on('data', (chunk) => {
+            data += chunk.toString();
+        });
+
+        req.on('end', () => {
+            const searchedParams = new URLSearchParams(data); 
+            const newCat = Object.fromEntries(searchedParams.entries());
+            cats.push(newCat);
+
+            
+        });
+    }
+
     switch (req.url) {
         case '/':
             html = await homeView();
@@ -47,7 +64,13 @@ function readFile(path) {
 async function homeView() {
     const html = await readFile('./src/views/home/index.html');
 
-    const catsHtml = cats.map(cat => catTemplate(cat)).join('\n');
+    let catsHtml = '';
+
+    if (catsHtml.length > 0) {
+        catsHtml = cats.map(cat => catTemplate(cat)).join('\n');
+    } else {
+        catsHtml = `<span>There are no cats</span>`
+    }
 
     const result = html.replace('{{cats}}', catsHtml);
 
