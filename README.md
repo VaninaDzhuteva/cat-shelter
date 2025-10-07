@@ -19,3 +19,4 @@ SoftUni JS Back End Course Project
 - [x] Redirect to home page
 - [x] Conditional rendering
 - [x] Add json data percistance
+- [x] Add cache
