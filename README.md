@@ -18,3 +18,4 @@ SoftUni JS Back End Course Project
 - [x] Add cats from add-cats page
 - [x] Redirect to home page
 - [x] Conditional rendering
+- [x] Add json data percistance

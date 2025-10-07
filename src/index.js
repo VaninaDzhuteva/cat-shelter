@@ -1,7 +1,9 @@
 import http from 'http';
 import fs from 'fs/promises';
 
-import cats from './cats.js';
+import { getCats, saveCat } from './data.js';
+
+// import cats from './cats.js';
 
 const server = http.createServer(async (req, res) => {
     let html;
@@ -13,15 +15,18 @@ const server = http.createServer(async (req, res) => {
             data += chunk.toString();
         });
 
-        req.on('end', () => {
+        req.on('end', async () => {
             const searchedParams = new URLSearchParams(data); 
             const newCat = Object.fromEntries(searchedParams.entries());
-            cats.push(newCat);
+            
+            await saveCat(newCat);
 
             // Redirect to home page
             res.writeHead(302, {
                 'location': '/'
             });
+
+            res.end();
         });
 
         return
@@ -71,7 +76,9 @@ async function homeView() {
 
     let catsHtml = '';
 
-    if (catsHtml.length > 0) {
+    const cats = await getCats();
+
+    if (cats.length > 0) {
         catsHtml = cats.map(cat => catTemplate(cat)).join('\n');
     } else {
         catsHtml = `<span>There are no cats</span>`
