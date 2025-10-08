@@ -22,4 +22,4 @@ SoftUni JS Back End Course Project
 - [x] Add cache
 - [x] Add edit cat functionality
 - [ ] Add dynamic breeds
-- [ ] Add unique id to each created cat
+- [x] Add unique id to each created cat
