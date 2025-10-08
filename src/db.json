@@ -16,10 +16,10 @@
     },
     {
       "id": 3,
-      "imageUrl": "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=612x612&w=0&k=20&c=vvM97wWz-hMj7DLzfpYRmY2VswTqcFEKkC437hxm3Cg=",
-      "name": "Sisa",
-      "breed": "Siamese Cat",
-      "description": "Loves to cuddle and nap. Requires regular grooming for its luxurious coat."
+      "name": "Sisa2",
+      "description": "Loves to cuddle and nap. Requires regular grooming for its luxurious coat.",
+      "imageUrl": "imageUrl",
+      "breed": "Fluffy Cat"
     },
     {
       "id": 4,
@@ -37,9 +37,9 @@
     },
     {
       "id": 6,
-      "name": "Test2",
+      "name": "jjj",
       "description": "test descriptnion",
-      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg",
+      "imageUrl": "imageUrl",
       "breed": "Fluffy Cat"
     },
     {
@@ -47,54 +47,6 @@
       "name": "Test3",
       "description": "dasdasd",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-bQnvL_yGisgee2AFzgRyXxfDAaGAo0X348eL4u3RSrDwmgUVYu_c9VFpxE4mPjVx3q8&usqp=CAU",
-      "breed": "Fluffy Cat"
-    },
-    {
-      "name": "dfg",
-      "description": "sfd",
-      "imageUrl": "df",
-      "breed": "Fluffy Cat"
-    },
-    {
-      "name": "rggr",
-      "description": "reg",
-      "imageUrl": "",
-      "breed": "Fluffy Cat"
-    },
-    {
-      "name": "дфсдгхфт",
-      "description": "гфхгхф",
-      "imageUrl": "",
-      "breed": "Fluffy Cat"
-    },
-    {
-      "name": "дфсдгхфт",
-      "description": "гфхгхф",
-      "imageUrl": "",
-      "breed": "Fluffy Cat"
-    },
-    {
-      "name": "rr",
-      "description": "rrr",
-      "imageUrl": "",
-      "breed": "Fluffy Cat"
-    },
-    {
-      "name": "ed",
-      "description": "no",
-      "imageUrl": "",
-      "breed": "Fluffy Cat"
-    },
-    {
-      "name": "dd",
-      "description": "asd",
-      "imageUrl": "",
-      "breed": "Fluffy Cat"
-    },
-    {
-      "name": "sadf",
-      "description": "dsfg",
-      "imageUrl": "",
       "breed": "Fluffy Cat"
     }
   ],

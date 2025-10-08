@@ -20,3 +20,6 @@ SoftUni JS Back End Course Project
 - [x] Conditional rendering
 - [x] Add json data percistance
 - [x] Add cache
+- [x] Add edit cat functionality
+- [ ] Add dynamic breeds
+- [ ] Add unique id to each created cat
